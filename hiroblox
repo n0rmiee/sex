@@ -37,7 +37,7 @@ local GetPlayers = __index(Players, "GetPlayers")
 local RequiredDistance, Typing, Running, ServiceConnections, Animation, OriginalSensitivity = 2000, false, false, {}
 local Connect, Disconnect, GetRenderProperty, SetRenderProperty = __index(game, "DescendantAdded").Connect
 
-local UWP = false
+local UWP = true
 
 do
 	xpcall(function()
@@ -101,12 +101,12 @@ getgenv().ExunysDeveloperAimbot = {
 		NumSides = 60,
 
 		Thickness = 1,
-		Transparency = 1,
+		Transparency = 0,
 		Filled = false,
 
 		RainbowColor = false,
 		RainbowOutlineColor = false,
-		Color = Color3fromRGB(255, 255, 255),
+		Color = Color3fromRGB(255, 0, 0),
 		OutlineColor = Color3fromRGB(0, 0, 0),
 		LockedColor = Color3fromRGB(255, 150, 150)
 	},
